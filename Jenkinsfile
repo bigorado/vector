@@ -8,7 +8,6 @@ pipeline {
         }
         stage('Molecule Test') {
             steps {
-                sh 'pip install molecule'
                 sh 'molecule test'
             }
         }
